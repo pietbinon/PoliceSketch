@@ -19,8 +19,6 @@
 		60D60731197C369000A4DE1D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60730197C369000A4DE1D /* XCTest.framework */; };
 		60D60732197C369000A4DE1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60711197C369000A4DE1D /* Foundation.framework */; };
 		60D60733197C369000A4DE1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60715197C369000A4DE1D /* UIKit.framework */; };
-		60D6073B197C369000A4DE1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60D60739197C369000A4DE1D /* InfoPlist.strings */; };
-		60D6073D197C369000A4DE1D /* PoliceSketchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60D6073C197C369000A4DE1D /* PoliceSketchTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +48,6 @@
 		60D60729197C369000A4DE1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		60D6072F197C369000A4DE1D /* PoliceSketchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoliceSketchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D60730197C369000A4DE1D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		60D60738197C369000A4DE1D /* PoliceSketchTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PoliceSketchTests-Info.plist"; sourceTree = "<group>"; };
-		60D6073A197C369000A4DE1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		60D6073C197C369000A4DE1D /* PoliceSketchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoliceSketchTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				60D60717197C369000A4DE1D /* PoliceSketch */,
-				60D60736197C369000A4DE1D /* PoliceSketchTests */,
 				60D60710197C369000A4DE1D /* Frameworks */,
 				60D6070F197C369000A4DE1D /* Products */,
 			);
@@ -130,24 +124,6 @@
 				60D6071A197C369000A4DE1D /* InfoPlist.strings */,
 				60D6071D197C369000A4DE1D /* main.m */,
 				60D6071F197C369000A4DE1D /* PoliceSketch-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		60D60736197C369000A4DE1D /* PoliceSketchTests */ = {
-			isa = PBXGroup;
-			children = (
-				60D6073C197C369000A4DE1D /* PoliceSketchTests.m */,
-				60D60737197C369000A4DE1D /* Supporting Files */,
-			);
-			path = PoliceSketchTests;
-			sourceTree = "<group>";
-		};
-		60D60737197C369000A4DE1D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				60D60738197C369000A4DE1D /* PoliceSketchTests-Info.plist */,
-				60D60739197C369000A4DE1D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -239,7 +215,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60D6073B197C369000A4DE1D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60D6073D197C369000A4DE1D /* PoliceSketchTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,14 +263,6 @@
 				60D60724197C369000A4DE1D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		60D60739197C369000A4DE1D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60D6073A197C369000A4DE1D /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -457,6 +423,7 @@
 				60D60742197C369000A4DE1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60D60743197C369000A4DE1D /* Build configuration list for PBXNativeTarget "PoliceSketchTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +432,7 @@
 				60D60745197C369000A4DE1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
