@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LPSData.h"
+
 
 @interface LPSViewController : UIViewController
 

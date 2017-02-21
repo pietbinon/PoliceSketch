@@ -19,6 +19,7 @@
 		60D60731197C369000A4DE1D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60730197C369000A4DE1D /* XCTest.framework */; };
 		60D60732197C369000A4DE1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60711197C369000A4DE1D /* Foundation.framework */; };
 		60D60733197C369000A4DE1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D60715197C369000A4DE1D /* UIKit.framework */; };
+		77D24BE91E5BA7DD00ACF63A /* LPSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D24BE81E5BA7DD00ACF63A /* LPSData.m */; };
 		8BF448D11D2B216D00440722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BF448D01D2B216D00440722 /* LaunchScreen.storyboard */; };
 		AF23D7FB19DCB73A0049AD5E /* arrow_left.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF23D7EA19DCB73A0049AD5E /* arrow_left.jpg */; };
 		AF23D7FC19DCB73A0049AD5E /* arrow_right.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AF23D7EB19DCB73A0049AD5E /* arrow_right.jpg */; };
@@ -66,6 +67,8 @@
 		60D60729197C369000A4DE1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		60D6072F197C369000A4DE1D /* PoliceSketchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoliceSketchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60D60730197C369000A4DE1D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		77D24BE71E5BA7DD00ACF63A /* LPSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPSData.h; sourceTree = "<group>"; };
+		77D24BE81E5BA7DD00ACF63A /* LPSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPSData.m; sourceTree = "<group>"; };
 		8BF448D01D2B216D00440722 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF23D7EA19DCB73A0049AD5E /* arrow_left.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow_left.jpg; sourceTree = "<group>"; };
 		AF23D7EB19DCB73A0049AD5E /* arrow_right.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arrow_right.jpg; sourceTree = "<group>"; };
@@ -143,11 +146,11 @@
 			isa = PBXGroup;
 			children = (
 				AF23D7E919DCB73A0049AD5E /* Images */,
-				60D60720197C369000A4DE1D /* LPSAppDelegate.h */,
-				60D60721197C369000A4DE1D /* LPSAppDelegate.m */,
-				60D60723197C369000A4DE1D /* Main.storyboard */,
+				77D24BE71E5BA7DD00ACF63A /* LPSData.h */,
+				77D24BE81E5BA7DD00ACF63A /* LPSData.m */,
 				60D60726197C369000A4DE1D /* LPSViewController.h */,
 				60D60727197C369000A4DE1D /* LPSViewController.m */,
+				60D60723197C369000A4DE1D /* Main.storyboard */,
 				8BF448D01D2B216D00440722 /* LaunchScreen.storyboard */,
 				60D60729197C369000A4DE1D /* Images.xcassets */,
 				60D60718197C369000A4DE1D /* Supporting Files */,
@@ -158,6 +161,8 @@
 		60D60718197C369000A4DE1D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				60D60720197C369000A4DE1D /* LPSAppDelegate.h */,
+				60D60721197C369000A4DE1D /* LPSAppDelegate.m */,
 				60D60719197C369000A4DE1D /* PoliceSketch-Info.plist */,
 				60D6071A197C369000A4DE1D /* InfoPlist.strings */,
 				60D6071D197C369000A4DE1D /* main.m */,
@@ -235,7 +240,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = LPS;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Lighthouse Labs";
 				TargetAttributes = {
 					60D6072E197C369000A4DE1D = {
@@ -306,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60D60722197C369000A4DE1D /* LPSAppDelegate.m in Sources */,
+				77D24BE91E5BA7DD00ACF63A /* LPSData.m in Sources */,
 				60D6071E197C369000A4DE1D /* main.m in Sources */,
 				60D60728197C369000A4DE1D /* LPSViewController.m in Sources */,
 			);
@@ -361,14 +367,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -381,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -400,20 +411,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
