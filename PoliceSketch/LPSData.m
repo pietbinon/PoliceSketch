@@ -52,12 +52,15 @@
     if (self.currentEyesIndex >= self.eyes.count)
         self.currentEyesIndex = 0;
     return self.eyes[self.currentEyesIndex];
+//    //This kine does the same as previous line
+//    return [self.eyesImagesArray objectAtIndex: self.eyesPicCurrentState];
+
 }
 
 
 - (UIImage *) backEyes {
     self.currentEyesIndex -= 1;
-    if (self.currentEyesIndex <= 0)
+    if (self.currentEyesIndex < 0)
         self.currentEyesIndex = self.eyes.count - 1;
     return self.eyes[self.currentEyesIndex];
 }
@@ -73,7 +76,7 @@
 
 - (UIImage *) backNose {
     self.currentNoseIndex -= 1;
-    if (self.currentNoseIndex <= 0)
+    if (self.currentNoseIndex < 0)
         self.currentNoseIndex = self.nose.count - 1 ;
     return self.nose[self.currentNoseIndex];
 }
@@ -89,7 +92,7 @@
 
 - (UIImage *) backMouth {
     self.currentMouthIndex -= 1;
-    if (self.currentMouthIndex <= 0)
+    if (self.currentMouthIndex < 0)
         self.currentMouthIndex = self.mouth.count - 1;
     return self.mouth[self.currentMouthIndex];
 }
